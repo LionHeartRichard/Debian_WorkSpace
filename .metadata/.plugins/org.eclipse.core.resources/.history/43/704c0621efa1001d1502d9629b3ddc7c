@@ -1,0 +1,7 @@
+package com.oop.geometric;
+
+public class Line extends Point {
+	Line() {
+		System.out.println("Constructor Line");
+	}
+}

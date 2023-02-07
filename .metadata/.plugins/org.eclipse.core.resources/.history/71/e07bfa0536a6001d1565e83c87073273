@@ -1,0 +1,56 @@
+package ru.oop.tasks;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+	}
+}
+
+abstract class DataGraph implements Observer {
+	private double[] data = new double[N_ELEMENTS];
+
+	void setData(double[] data) {
+		this.data = data;
+	}
+	double[] getData() {
+		return data;
+	}
+
+	Observer[] graphs;
+}
+
+interface Observer {
+	int N_ELEMENTS = 10;
+
+	void update();
+}
+
+class LineGraph extends DataGraph {
+	DataGraph dataGraph;
+
+	@Override
+	public void update() {
+		System.out.println("Graphs drawing in LINE");
+
+	}
+
+}
+
+class BarGraph extends DataGraph {
+	DataGraph dataGraph;
+
+	@Override
+	public void update() {
+		System.out.println("BAR_GRAPH");
+	}
+}
+
+class ChartGraph extends DataGraph {
+	DataGraph dataGraph;
+
+	@Override
+	public void update() {
+		System.out.println("Graphs drawing in chart");
+	}
+}

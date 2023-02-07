@@ -1,0 +1,9 @@
+package com.oop.geometric;
+
+public class Triangle extends Line {
+	private int x3;
+	private int y3;
+	Triangle() {
+		System.out.println("Constructor Triangle");
+	}
+}

@@ -1,0 +1,6 @@
+package com.oop.animals;
+
+public abstract class Animals {
+	protected int[] size;
+	public abstract void giveDithTo();
+}

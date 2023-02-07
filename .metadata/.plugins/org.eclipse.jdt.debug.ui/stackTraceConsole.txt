@@ -1,0 +1,12 @@
+if (l1 != null) {
+						x = l1.val;
+						l1 = l1.next;
+					} else {
+						x = 0;
+					}
+					if (l2 !=null) {
+						y = l2.val;
+						l2 = l2.next;
+					} else {
+						y = 0;
+					}

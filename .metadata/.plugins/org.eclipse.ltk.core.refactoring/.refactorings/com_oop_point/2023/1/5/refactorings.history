@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.oop.singleton.SingletonSeniorSoftwarwEngineer&apos; to &apos;SingletonSeniorSoftwareEngineer&apos;&#x0A;- Original project: &apos;com_oop_point&apos;&#x0A;- Original element: &apos;com.oop.singleton.SingletonSeniorSoftwarwEngineer&apos;&#x0A;- Renamed element: &apos;com.oop.singleton.SingletonSeniorSoftwareEngineer&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SingletonSeniorSoftwarwEngineer&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.oop.singleton{SingletonSeniorSoftwarwEngineer.java[SingletonSeniorSoftwarwEngineer" matchStrategy="1" name="SingletonSeniorSoftwareEngineer" qualified="false" references="true" similarDeclarations="false" stamp="1675151188739" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,12 @@
+package ru.leetcode.listnode;
+
+public class Main {
+	public static void main(String[] args) {
+		for (int i=0; i<10; i++) {
+			ListNode list = new ListNode();
+			list.next = list;
+			list.val = i;
+		}
+	}
+
+}

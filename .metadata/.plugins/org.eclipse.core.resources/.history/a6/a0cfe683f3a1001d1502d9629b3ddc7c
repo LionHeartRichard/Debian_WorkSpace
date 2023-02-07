@@ -1,0 +1,12 @@
+package com.oop.geometric;
+
+public class Ellipse extends Line {
+	Ellipse() {
+		System.out.println("Constructor Ellipse");
+	}
+	
+	Ellipse(int x1, int y1, int x2, int y2) {
+
+		
+	}
+}

@@ -1,0 +1,19 @@
+package com.oop.myinterface;
+
+public class Main {
+	public static void main(String[] args) {
+		Geometric[] figures = new Geometric[3];
+		figures[0] = new Line();
+		figures[1] = new Triangle();
+		figures[2] = new Rectangle();
+		
+		for (int i = 0; i < 3; i++) {
+			figures[i].draw();
+			if (figures[i] instanceof MathGeometric) {
+				double square = ((MathGeometric) figures[i]).getSquare(4, 6);
+				System.out.println(square);
+			}
+			
+		}
+	}
+}

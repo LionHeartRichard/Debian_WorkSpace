@@ -1,0 +1,11 @@
+package com.oop.myinterface;
+
+public class Line extends Geometric implements Coordinates{
+	public void draw() {
+		System.out.println("draw line");
+	}
+	
+	public double[] getCoordinates() {
+		return new double[]{3.0 , 4.1, 7.9, 9.2};
+	}
+}

@@ -1,0 +1,74 @@
+package ru.leetcode.medium.palindromic;
+
+public class Solution {
+	public String longestPalindrome(String s) {
+		if (s.length() == 1) {
+			return s;
+		}
+		if (s.length() == 2) {
+			if (s.charAt(0) == s.charAt(1))
+				return s;
+			else
+				return "" + s.charAt(0);
+		}
+		if (s.length() == 3) {
+			if (s.charAt(0) == s.charAt(2)) {
+				return s;
+			} else {
+				if (s.charAt(0) == s.charAt(1))
+					return "" + s.charAt(0) + s.charAt(1);
+				if (s.charAt(1) == s.charAt(2)) {
+					return "" + s.charAt(1) + s.charAt(2);
+				} else
+					return "" + s.charAt(0);
+			}
+		}
+		String strToFind = "";
+		String subString = "";
+		int left = 1;
+		int right = 1;
+		boolean logic1 = false;
+		boolean logic2 = false;
+		for (int i = 0; i < s.length() - 1; i++) {
+			if (i <= s.length() - 2 && s.charAt(i) == s.charAt(i + 1)) {
+				left = i;
+				right = i + 1;
+				logic1 = true;
+			}
+			if (i > 0 && i <= s.length() - 2 && s.charAt(i - 1) == s.charAt(i + 1) 
+					&& logic1 != true) {
+				left = i - 1;
+				right = i + 1;
+				logic2 = true;
+			}
+			if (logic1 == true || logic2 == true) {
+				if (logic2 == true) {
+					subString = "" + s.charAt(i);
+				}
+				while (subString.length() < s.length()) {
+					if (s.charAt(left) == s.charAt(right)) {
+						subString = subString + s.charAt(right);
+						subString = s.charAt(left) + subString;
+						if (left > 0)
+							left--;
+						else
+							break;
+						if (right < s.length() - 1)
+							right++;
+						else
+							break;
+					} else {
+						break;
+					}
+				}
+				if (strToFind.length() < subString.length())
+					strToFind = subString;
+				subString = "";
+				logic1 = false;
+				logic2 = false;
+			}
+		}
+		return strToFind;
+	}
+
+}

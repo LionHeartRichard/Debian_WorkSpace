@@ -1,0 +1,15 @@
+package com.oop.myinterface;
+
+public class Triangle extends Geometric implements MathGeometric{
+	
+	private int height, base;
+	
+	public void draw() {
+		System.out.println("draw triangle");
+	}
+	public double square(double x, double y) {
+		base = x;
+		height = y;
+		int square =  
+	}
+}

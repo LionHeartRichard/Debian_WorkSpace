@@ -1,0 +1,10 @@
+package com.oop.myinterface;
+
+public class Triangle extends Geometric implements MathGeometric{
+	public void draw() {
+		System.out.println("draw triangle");
+	}
+	public int square() {
+		
+	}
+}

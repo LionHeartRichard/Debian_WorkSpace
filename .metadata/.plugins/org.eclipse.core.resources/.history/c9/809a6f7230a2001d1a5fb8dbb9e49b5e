@@ -1,0 +1,5 @@
+package com.oop.polimorfism;
+
+public class JapanWarriors extends Warriors {
+	protected 
+}

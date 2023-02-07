@@ -1,0 +1,19 @@
+package org.oop.mytype;
+
+public class MainMyTypr {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+class MyType<T> {
+	protected T x, y;
+}
+
+class Validata {
+	public MyType getVariable() {
+		
+	}
+}

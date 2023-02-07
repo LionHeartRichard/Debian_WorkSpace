@@ -1,0 +1,19 @@
+package com.oop.myinterface;
+
+public class Rectangle extends Geometric implements MathGeometric, Coordinates {
+	private void draw() {
+		System.out.println("draw rectangle");
+	}
+
+	public void setCoordinates(double x1, double y1, double x2, double y2, double x3, double y3) {
+		
+	}
+	
+	public double getSquare(double x, double y) {
+		return x * y;
+	}
+	
+	public double[] getCoordinates() {
+		return new double[] {234, 3576, 99.4567, 3.14};
+	}
+}

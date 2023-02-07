@@ -1,0 +1,8 @@
+package com.oop.polimorfism;
+
+public class MinamotoSamurai extends Samurai {
+	@Override
+	public void attack() {
+		System.out.println("--master katana attack--");
+	}
+}

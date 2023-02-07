@@ -1,0 +1,11 @@
+package com.oop.myinterface;
+
+public class Rectangle extends Geometric implements Geometric {
+	public void draw() {
+		System.out.println("draw rectangle");
+	}
+
+	public double square(double x, double y) {
+		return x * y;
+	}
+}

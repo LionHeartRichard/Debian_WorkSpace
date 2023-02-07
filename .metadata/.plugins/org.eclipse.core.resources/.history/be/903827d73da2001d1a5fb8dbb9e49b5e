@@ -1,0 +1,10 @@
+package com.oop.polimorfism;
+
+public class Main {
+	public static void main(String[] args) {
+		Warriors ronin = new Samurai();
+		ronin.name = "Ehido";
+		ronin.type = "ia-do atack";
+		ronin.attack();
+	}
+}

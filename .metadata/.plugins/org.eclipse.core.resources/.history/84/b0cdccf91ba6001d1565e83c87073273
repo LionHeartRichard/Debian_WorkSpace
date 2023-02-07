@@ -1,0 +1,27 @@
+package org.oop.anonimclass;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Button btn = new Button() {
+			public void click() {
+				System.out.println("Open file");
+			}
+			
+			public void escape() {
+				System.out.println("Escape to program");
+			}
+		};
+		btn.click();
+		
+		Button myButton = new Button();
+		myButton.click();
+	}
+
+}
+
+class Button{
+	public void click() {
+		System.out.println("Enter to button");
+	}
+}

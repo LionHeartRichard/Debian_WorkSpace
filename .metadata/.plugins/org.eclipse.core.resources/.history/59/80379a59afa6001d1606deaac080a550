@@ -1,0 +1,59 @@
+package com.oop.enummy;
+
+public class MainEnum {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+
+enum GeometricType {
+	POINT, LINE, TRIANGLE, RECTANGLE
+}
+
+abstract class Geometric {
+	abstract void draw();
+}
+
+class Point extends Geometric {
+	
+	protected int x, y;
+
+	Point() {
+	}
+	
+	Point(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+	
+	@Override
+	void draw() {
+		System.out.println("POINT DRAW");
+	}
+	
+
+
+}
+
+class Line extends Point implements DrawGeom {
+
+	@Override
+	public void draw() {
+		System.out.println(this.getClass());
+	}
+
+}
+
+class Triangle extends Line implements DrawGeom {
+
+}
+
+class Rectangle extends Line implements DrawGeom {
+
+}
+
+interface DrawGeom {
+	public void draw();
+}

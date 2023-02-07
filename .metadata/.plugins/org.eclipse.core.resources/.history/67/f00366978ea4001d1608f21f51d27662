@@ -1,0 +1,50 @@
+package com.oop.myinterface;
+
+public class Point extends Geometric implements Coordinates {
+	private double x, y;
+
+	public double[] getCoordinates() {
+		return new double[] {this.x, this.y};
+	}
+	
+	Point() {
+	}
+
+	Point(double[] mas) {
+
+		this.x = mas[0];
+		this.y = mas[1];
+	}
+
+	Point(double x, double y) {
+		if (Coordinates.checkPointIsRange(x,y)) {
+		this.x = x;
+		this.y = y;
+		} else { 
+			this.x = 0.0;
+		}
+		
+	}
+
+	public double getX() {
+		return x;
+	}
+
+	public void setX(double x) {
+		this.x = x;
+	}
+
+	public double getY() {
+		return y;
+	}
+
+	public void setY(double y) {
+		this.y = y;
+	}
+
+	@Override
+	public void draw() {
+		System.out.println("draw POINT");		
+	}
+
+}

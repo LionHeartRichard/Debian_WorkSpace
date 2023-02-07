@@ -1,0 +1,21 @@
+package com.oop.myinterface;
+
+public interface Coordinates {
+	public static final int MAX_COORD = 1000;
+	int MIN_COORD = -1000;
+
+	public static void showAllovableRange() {
+		System.out.println("[" + MIN_COORD + ";" + MAX_COORD + "]");
+	}
+
+	public static boolean checkPointIsRange(double x, double y) {
+		if (x > MAX_COORD || x < MIN_COORD || y > MAX_COORD || y < MIN_COORD) {
+			System.out.println("Invalide data!!!");
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	public double[] getCoordinates();
+}

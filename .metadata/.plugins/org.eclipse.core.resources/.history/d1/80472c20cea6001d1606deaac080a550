@@ -1,0 +1,47 @@
+package org.oop.mytype;
+
+import java.util.Scanner;
+
+class MyNumber<T extends Number> {
+	protected T x, y;
+
+	protected void getResult(char operation) {
+		System.out.println("RESULT:");
+	}
+}
+
+public class MainMyType {
+
+	private static Scanner scanner = new Scanner(System.in);
+	private static char ch;
+	private static MyNumber number;
+	public static final char[] MAS_CHAR = { '+', '-', '/', '*' };
+
+	public static void main(String[] args) {
+		number.x = getVariable();
+		number.y = getVariable();
+		ch = checkOperation();
+	}
+
+	private static char checkOperation() {
+		for (char localCh : MAS_CHAR) {
+			if (scanner.hasNext()) {
+				if (localCh == scanner.next().charAt(0)) {
+					return localCh;
+				}
+			}
+		}
+		System.out.println("EROR: invalide operation!!!");
+		return checkOperation();
+	}
+
+	private static Number getVariable() {
+		if (scanner.hasNextDouble())
+			return scanner.nextDouble();
+		if (scanner.hasNextLong())
+			return scanner.nextLong();
+		System.out.println("You entered is not possible value!!!");
+		return getVariable();
+	}
+
+}

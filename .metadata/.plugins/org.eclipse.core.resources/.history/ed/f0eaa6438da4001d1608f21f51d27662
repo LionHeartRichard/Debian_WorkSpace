@@ -1,0 +1,36 @@
+package com.oop.myinterface;
+
+public class Point implements Coordinates {
+	private double x, y;
+
+	Point() {
+	}
+
+	Point(double[] mas) {
+
+		this.x = mas[0];
+		this.y = mas[1];
+	}
+
+	Point(double x, double y) {
+		this.x = x;
+		this.y = y;
+	}
+
+	public double getX() {
+		return x;
+	}
+
+	public void setX(double x) {
+		this.x = x;
+	}
+
+	public double getY() {
+		return y;
+	}
+
+	public void setY(double y) {
+		this.y = y;
+	}
+
+}

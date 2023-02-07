@@ -1,0 +1,32 @@
+package org.oop.anonimclass;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Button btn = new Button(); 
+		btn.click();
+		
+		var myButton = new Button() {
+			public void click() {
+				System.out.println("Open file");
+			}
+			
+			public void escape() {
+				System.out.println("Escape to program");
+			}
+		};
+		myButton.click();
+		myButton.escape();
+		
+		EventButton event = new EventButton(new EventHandler) {
+			public 
+		});
+	}
+
+}
+
+class Button{
+	public void click() {
+		System.out.println("Enter to button");
+	}
+}

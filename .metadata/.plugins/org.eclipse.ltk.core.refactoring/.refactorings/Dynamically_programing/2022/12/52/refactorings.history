@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ru.isaev.dynamically.proraming.ConvertionNumeric&apos; to &apos;ConversionNumeric&apos;&#x0A;- Original project: &apos;Dynamically_programing&apos;&#x0A;- Original element: &apos;ru.isaev.dynamically.proraming.ConvertionNumeric&apos;&#x0A;- Renamed element: &apos;ru.isaev.dynamically.proraming.ConversionNumeric&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ConvertionNumeric&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;ru.isaev.dynamically.proraming{ConvertionNumeric.java[ConvertionNumeric" matchStrategy="1" name="ConversionNumeric" qualified="false" references="true" similarDeclarations="false" stamp="1671746162429" textual="false" version="1.0"/>
+</session>

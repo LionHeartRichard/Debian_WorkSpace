@@ -1,0 +1,13 @@
+package com.oop.animals;
+
+public interface PropertiesAnimals {
+	public static boolean checkSize(int[] mas) {
+		for (int i:mas) {
+			if (i<0) {
+				System.out.println("Error: size is not possible!!!");
+				return false;
+			}
+		}
+		return true;
+	}
+}

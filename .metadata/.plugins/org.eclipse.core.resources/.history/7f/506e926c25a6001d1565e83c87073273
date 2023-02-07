@@ -1,0 +1,15 @@
+package ru.oop.tasks;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+	}
+}
+
+class DataGraph{
+	double[] data;
+	double[] getData() {
+		return new double[] {};
+	}
+}

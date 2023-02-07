@@ -1,0 +1,40 @@
+package org.oop.mytype;
+
+import java.util.Scanner;
+
+class MyType<T> {
+	protected T x,y;
+}
+
+class MyBlockBool{
+	protected boolean checkEnter = false;
+	protected boolean checkDouble = false;
+	protected boolean checkLong = false;
+	protected boolean[] masBool = new boolean[3];
+	
+	/*protected double getValue() {
+		
+	}
+	
+	protected long getValue() {
+		
+		return ;
+	}*/
+}
+/*
+public class MainMyType {
+	
+	private static Scanner scanner = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		MyBlockBool blockBool = new MyBlockBool();
+		if (scanner.hasNextDouble()) {
+				
+		}
+	}
+
+}*/
+
+
+
+

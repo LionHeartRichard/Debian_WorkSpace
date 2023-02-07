@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;org.oop.anonimclass.IsButton&apos; to &apos;EventButton&apos;&#x0A;- Original project: &apos;com_oop_point&apos;&#x0A;- Original element: &apos;org.oop.anonimclass.IsButton&apos;&#x0A;- Renamed element: &apos;org.oop.anonimclass.EventButton&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;IsButton&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;org.oop.anonimclass{IsButton.java[IsButton" matchStrategy="1" name="EventButton" qualified="false" references="true" similarDeclarations="false" stamp="1675688251591" textual="false" version="1.0"/>
+</session>

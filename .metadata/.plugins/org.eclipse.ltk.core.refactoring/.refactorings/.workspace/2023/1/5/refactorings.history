@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;com.oop.point&apos; to &apos;com_oop_point&apos;" description="Rename resource &apos;com.oop.point&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/com.oop.point" name="com_oop_point" stamp="1675094593197" updateReferences="true"/>
+</session>

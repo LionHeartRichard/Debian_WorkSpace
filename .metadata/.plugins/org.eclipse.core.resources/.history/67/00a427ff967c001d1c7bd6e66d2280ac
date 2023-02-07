@@ -1,0 +1,47 @@
+package ru.leetcode.listnode;
+/**
+* Definition for singly-linked list.
+* public class ListNode {
+*     int val;
+*     ListNode next;
+*     ListNode() {}
+*     ListNode(int val) { this.val = val; }
+*     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+* }
+*/
+class Solution {
+   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+       int i = this.convertionToNumber(this.reverseListNode(l1));
+		int j = this.convertionToNumber(this.reverseListNode(l2));
+		i = i + j;
+		String str = "" + i;
+		return this.convertionToReversListNode(str);
+	}
+
+	public ArrayList<Integer> reverseListNode(ListNode l) {
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		while (l != null) {
+			list.add(0, l.val);
+			l = l.next;
+		}
+		return list;
+	}
+
+	public int convertionToNumber(ArrayList<Integer> list) {
+		String str = "";
+		for (int i : list) {
+			str = str + i;
+		}
+		return Integer.parseInt(str);
+	}
+
+	public ListNode convertionToReversListNode(String str) {
+		ListNode list = new ListNode();
+		for (int i = 0; i < str.length(); i++) {
+			char ch = str.charAt(i);
+			list.val = Character.digit(ch, 10);
+			list.next = list;
+		}
+		return list;
+	}
+}

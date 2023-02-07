@@ -1,0 +1,17 @@
+package ru.leetcode.listnode;
+
+class Solution {
+   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+       return l1;
+	}
+   
+   public String strToFind(ListNode l) {
+	   String str = "";
+	   while (l != null) {
+		   str = str + l.val;
+		   l = l.next;
+	   }
+	   return str;
+   }
+
+}
