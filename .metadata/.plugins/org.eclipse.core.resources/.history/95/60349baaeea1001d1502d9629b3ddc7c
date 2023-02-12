@@ -1,7 +1,0 @@
-package com.oop.geometric;
-
-public class Geometric {
-	Geometric() {
-		System.out.println("Constructor Geometric");
-	}
-}

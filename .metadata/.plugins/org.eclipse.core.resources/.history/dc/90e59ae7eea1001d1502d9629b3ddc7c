@@ -1,7 +1,0 @@
-package com.oop.geometric;
-
-public class Point extends Geometric {
-	Point() {
-		System.out.println("Constructor Point");
-	}
-}

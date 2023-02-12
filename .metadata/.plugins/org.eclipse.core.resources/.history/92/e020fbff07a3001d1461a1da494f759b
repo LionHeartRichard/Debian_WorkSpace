@@ -1,5 +1,0 @@
-package com.oop.myinterface;
-
-public interface MathGeometric {
-	public double square(double x, double y);
-}

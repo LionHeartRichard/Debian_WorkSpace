@@ -1,7 +1,0 @@
-package com.oop.polimorfism;
-
-public class JapanWarriors extends Warriors {
-	protected void attack() {
-		System.out.println("attack");
-	}
-}

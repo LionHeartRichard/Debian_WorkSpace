@@ -1,7 +1,0 @@
-package com.oop.myinterface;
-
-public class Main {
-	public static void main(String[] args) {
-		
-	}
-}

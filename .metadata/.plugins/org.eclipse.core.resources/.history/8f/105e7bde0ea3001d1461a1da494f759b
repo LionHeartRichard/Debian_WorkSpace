@@ -1,7 +1,0 @@
-package com.oop.myinterface;
-
-public class Line extends Geometric {
-	public void draw() {
-		System.out.println("draw line");
-	}
-}
